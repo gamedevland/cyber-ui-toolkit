@@ -1,0 +1,42 @@
+{
+  "name": "cyber-ui-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace @gamedevland/cyber-ui && npm run build --workspace @gamedevland/cyber-ui-sdk",
+    "typecheck": "tsc --noEmit -p packages/core && tsc --noEmit -p packages/sdk && tsc --noEmit -p examples/standalone && tsc --noEmit -p examples/sdk",
+    "lint": "eslint . --max-warnings=0",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "demo": "vite examples/standalone --host 127.0.0.1",
+    "build:demo": "vite build examples/standalone",
+    "pack": "npm run build && node scripts/pack.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run typecheck && npm run lint && npm run format:check && npm test && npm run build:demo"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@gamedevland/engine": "0.0.11",
+    "@types/node": "^24.7.0",
+    "eslint": "9.39.5",
+    "pixi.js": "8.22.0",
+    "prettier": "3.9.10",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "8.3.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "description": "Procedural cyberpunk UI surfaces and host-driven effects for PixiJS 8",
+  "license": "MIT",
+  "overrides": {
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "^11.0.1"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@gamedevland/cyber-ui-sdk",
+  "version": "0.1.0",
+  "description": "GameDevLand SDK lifecycle and layout adapter for Cyber UI",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@gamedevland/cyber-ui": "^0.1.0",
+    "@gamedevland/engine": "0.0.11",
+    "pixi.js": ">=8.16.0 <9"
+  },
+  "author": "Gamedev Land",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamedevland/cyber-ui-toolkit.git",
+    "directory": "packages/sdk"
+  },
+  "homepage": "https://github.com/gamedevland/cyber-ui-toolkit#readme",
+  "bugs": {
+    "url": "https://github.com/gamedevland/cyber-ui-toolkit/issues"
+  },
+  "keywords": [
+    "pixijs",
+    "cyberpunk",
+    "ui",
+    "gamedev",
+    "typescript"
+  ],
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

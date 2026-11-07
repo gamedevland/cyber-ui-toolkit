@@ -1,0 +1,50 @@
+{
+  "triangle": {
+    "cycleMs": 2800,
+    "spinDelayMs": 3600,
+    "spinDurationMs": 1600,
+    "layers": 7,
+    "layerGap": 0.055,
+    "layerLift": 7,
+    "strokeWidth": 1.35,
+    "haloWidth": 8,
+    "haloAlpha": 0.045,
+    "echoAlpha": 0.12,
+    "particles": 96,
+    "particleSize": 1.25,
+    "particleSpread": 0.8,
+    "particleAlpha": 0.65,
+    "seed": 7291
+  },
+  "trianglePalette": {
+    "accent": 7392511,
+    "secondary": 4514559,
+    "highlight": 16766556,
+    "text": 15791871
+  },
+  "textEcho": {
+    "frameMs": 90,
+    "cycleMs": 1530,
+    "shift": 1
+  },
+  "glitch": {
+    "durationMs": 190,
+    "minDelayMs": 2400,
+    "spreadMs": 2000,
+    "seed": 7291
+  },
+  "palette": {
+    "background": 463394,
+    "panel": 1056569,
+    "inset": 661549,
+    "panelEdge": 3562116,
+    "signal": 16766556,
+    "steel": 2177889,
+    "sapphire": 1525377,
+    "text": 15791871,
+    "muted": 10927577,
+    "accent": 7392511,
+    "focus": 7392511,
+    "danger": 16733295
+  }
+}

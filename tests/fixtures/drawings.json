@@ -1,0 +1,1113 @@
+{
+  "pixiVersion": "8.22.0",
+  "theme": {
+    "background": 463394,
+    "panel": 1056569,
+    "panelEdge": 3562116,
+    "inset": 661549,
+    "text": 15791871,
+    "muted": 10927577,
+    "scanner": 4514559,
+    "bug": 16733295,
+    "steel": 2177889,
+    "sapphire": 1525377,
+    "signal": 16766556,
+    "sky": 7392511
+  },
+  "triangleConfig": {
+    "cycleMs": 2800,
+    "spinDelayMs": 3600,
+    "spinDurationMs": 1600,
+    "layers": 7,
+    "layerGap": 0.055,
+    "layerLift": 7,
+    "strokeWidth": 1.35,
+    "haloWidth": 8,
+    "haloAlpha": 0.045,
+    "echoAlpha": 0.12,
+    "particles": 96,
+    "particleSize": 1.25,
+    "particleSpread": 0.8,
+    "particleAlpha": 0.65,
+    "seed": 7291
+  },
+  "results": [
+    {
+      "name": "icon",
+      "args": {
+        "icon": "chip",
+        "size": 14
+      },
+      "hash": "e59ad77052bdbaa94c25b50d1f04056a86c8d13eccb56acb7e24d4d337c72af4"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "chip",
+        "size": 32
+      },
+      "hash": "470d42b630ba8c2743e46892829b7c9f34cfbefd489a6a05ad03d779620b3182"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "battle",
+        "size": 14
+      },
+      "hash": "3b386a6b573ff0db7da9923b6a1fd0f98cd41d200ffea906562a5d453981c633"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "battle",
+        "size": 32
+      },
+      "hash": "5575aa0039e42e28d66695ed3e1e010be37a274a62806edffe6c75d1a7836f1c"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "agents",
+        "size": 14
+      },
+      "hash": "b679ca6a0321fe985b7dd9dbf5ce52db073aae7146527f7e62a26f414ac02354"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "agents",
+        "size": 32
+      },
+      "hash": "70ba3947c6ac712d321d2dc3d84b377ef49f4f9d076a4a6ec02e3ed5bde3758b"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "skills",
+        "size": 14
+      },
+      "hash": "d597de38293d10f6ac960b32369455a8b46e17c575ec7523585d4973e559b76c"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "skills",
+        "size": 32
+      },
+      "hash": "3cfd9c1248ffb074db7b9a9cee0abe283731297b0270770ffab390b49129e948"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "quests",
+        "size": 14
+      },
+      "hash": "8a07c2082e7163d9281cf84bf273e853e14ebecbf6d267714bdc93ff8f0bdf1b"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "quests",
+        "size": 32
+      },
+      "hash": "367959f417b6a56f1eae0e07ea0ba004599cc7eb00f6abbeef31e03f24c5acc4"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "gear",
+        "size": 14
+      },
+      "hash": "22ddf2953be371ec579ddaa62c3b999480edd6ee87ac333b5e5e49782d3c7d54"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "gear",
+        "size": 32
+      },
+      "hash": "8206957498c5d0a44df10dc3d2af21e8c5c8cce593e5209c8a7e470fa5975c9e"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "bolt",
+        "size": 14
+      },
+      "hash": "2c4e0b8a11ba2f290acefad4db6b68c4d7bb5b8b9e97b6742581ceda23dfa59c"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "bolt",
+        "size": 32
+      },
+      "hash": "b40b919600126fd0daac724a0d0c3943ca3f9c4b12b104016dce81e570f4d09d"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "calendar",
+        "size": 14
+      },
+      "hash": "14a966c5167929dc1f92afdbcf5836810ad39a0fecf61bd15b48de67e225e146"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "calendar",
+        "size": 32
+      },
+      "hash": "5c8b4730a4ec336f00f37af1925746f6c390b4f9a69935a910daaa208f4e4a69"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "credit",
+        "size": 14
+      },
+      "hash": "93df5e0e62b5f3e0dc7b507c3e5d5c8b5c79fdf974f61403255beee275aabe16"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "credit",
+        "size": 32
+      },
+      "hash": "22767d7f0084f3050a4253c9384bc4d67e0fcab0feeecfaa7008bc563973a2aa"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "capsule",
+        "size": 14
+      },
+      "hash": "d274a33873f924bdaaf3c1689ba94cde250deb7fb7074d3ed8f435082e003a33"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "capsule",
+        "size": 32
+      },
+      "hash": "c0b03843fa67a38be7a75ba99f56f0fae57d4546bb9597755ae4bdb72be2e90e"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "key",
+        "size": 14
+      },
+      "hash": "c9afe516a1f2fbe503d8acc2407c266af754ffad194d8f2dedcc7afece6b45e8"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "key",
+        "size": 32
+      },
+      "hash": "a8fa389460e076ebcef1562cd7c0da3b9050783edd4625adc6ad6f6d6c268d4d"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "left",
+        "size": 14
+      },
+      "hash": "37bf6dd1f3b3465bf4d366018d33b89b3cb18df13839e6ebeadfb736d5f2053c"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "left",
+        "size": 32
+      },
+      "hash": "ee3c79db63d3963337af86af69e2c9d8faf6416bb55e1fb68d2d284dbd387e29"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "right",
+        "size": 14
+      },
+      "hash": "2a67d2c0fe10e2475a26b602a38ffb1ffc7cfb46feda4f4f74a6f6690c2b6b8f"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "right",
+        "size": 32
+      },
+      "hash": "98a8df7ddc6e58d08b9ea01e60f76eedd2006ed143dfdebbef1f531435dc3c8c"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "exit",
+        "size": 14
+      },
+      "hash": "d741e0b67fda8e103b75d86932bb3b28a03bc89bd3be698ea8acc142333c095b"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "exit",
+        "size": 32
+      },
+      "hash": "d7ff06b36e3535f5cc02d1913d910f75dafa34f41663dd18305b8d97e8133a5f"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "play",
+        "size": 14
+      },
+      "hash": "f738093671275ae2d45594655b46ae77ac7331b2885edf6a904f9f7bd4073b64"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "play",
+        "size": 32
+      },
+      "hash": "366666c67fcb48cf5016bf2bc289c9075a61631a2719c8a54ac9fdec12e4f6e8"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "lock",
+        "size": 14
+      },
+      "hash": "155d32510bdfc66d3d0b396646662a4fc1b83606f192e4f8229a3a829e7ea5a2"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "lock",
+        "size": 32
+      },
+      "hash": "e63c0e5989d1d4a004ce182b8d908b17d24cfffec14840dc5c86b118b766a600"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "chest",
+        "size": 14
+      },
+      "hash": "5679b9544191336dcc9e505ad4f1516b7aa0ef042dc25e99d0bd615c9cfee97e"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "chest",
+        "size": 32
+      },
+      "hash": "724b040e3a3268b78353818fbdc61e8c2ac49ba321e7f60209ba686811ca1b08"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "check",
+        "size": 14
+      },
+      "hash": "cc3aee4c962280e69fd5f966d94d53ae1903f4f2cdd53c701cc4ced96ecaa79f"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "check",
+        "size": 32
+      },
+      "hash": "d14019395f1710c4e9c05790d327adab7b7e452f39a7f07eb81edec4a2446060"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "speed",
+        "size": 14
+      },
+      "hash": "65e51e9de45099ce2f86b07addf72072386e5138594931d669dd529ddcc13ee3"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "speed",
+        "size": 32
+      },
+      "hash": "24ed49fc8af46827dcf7d43556750e4e151375878209162a06361bbc0e24460d"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "target",
+        "size": 14
+      },
+      "hash": "8fd569b09fe598715271375b0792383ddadf904944b61383d391e829d83439fd"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "target",
+        "size": 32
+      },
+      "hash": "8832131670b74dacd2dd8ccff443c91533cfd77b70ea19ee43fe1f4617e6e1e5"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "burst",
+        "size": 14
+      },
+      "hash": "29d61dc6a7cf6d0197ca3f711dccb0f5fe574c5ad11b8fe285250d95fc77f775"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "burst",
+        "size": 32
+      },
+      "hash": "6ac79aa0f5d7eee5d0c36463274405d596213dda5a9976e74bb2fa0ac3d0f40d"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "repair",
+        "size": 14
+      },
+      "hash": "b7822a3f568bfcdc55e5e05c18cc4f52ee9218ec6eac3a4f6a4332d9efe05119"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "repair",
+        "size": 32
+      },
+      "hash": "3b70ce33fda0c95766d727f012e072c5ad78fb5ae9ed4e8acbf10629c273c3f6"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "heart",
+        "size": 14
+      },
+      "hash": "f9f9dca7026c314ffc44c5ae1bb34ea02c3a22af350b33d8e913dc86d52cb348"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "heart",
+        "size": 32
+      },
+      "hash": "d10cc5bb7c624cc14968b472d5a03b210fd6c9bc784708a0a5a360227087b692"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "scan",
+        "size": 14
+      },
+      "hash": "e7aa81ce9fd39b3a95593b10abf0c1befcb0ea27f822af9ba2b84ba5f6a4d507"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "scan",
+        "size": 32
+      },
+      "hash": "4ec2ecdc03020c7b97e053b5fb81cc6e8ce9787405cf11cd1a07efc15a1f3f2f"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "snow",
+        "size": 14
+      },
+      "hash": "8d26827485cf5f29b97d1cc8d8bed21753d2a95e31403ff3efef1b299a3dd9b8"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "snow",
+        "size": 32
+      },
+      "hash": "6d9470f290e3bd330a668c513cb8ef7d42f0adbe152eef62c298e0d828266114"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "boss",
+        "size": 14
+      },
+      "hash": "70e3e820a2cf730061abdce2aebafe2c7303567e3409daa144bcb09275eea179"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "boss",
+        "size": 32
+      },
+      "hash": "636d5ce824e8121638fd7add94dc3834d303804f54e155c50e4307e9936be007"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "flag",
+        "size": 14
+      },
+      "hash": "0b79c2abd84ed287c11042e00f96bc43a6accc78810e3f1390edc6e6573da215"
+    },
+    {
+      "name": "icon",
+      "args": {
+        "icon": "flag",
+        "size": 32
+      },
+      "hash": "c8e18d54e0a6df07ed772e6fde1fd540844239531eda1f1935bb58ffd211f20c"
+    },
+    {
+      "name": "plate",
+      "args": {
+        "w": 180,
+        "h": 56
+      },
+      "hash": "62c7a5d116a0180f8ca9c63167228b0142b76b045a7d2f6a6e7030e24dc1748d"
+    },
+    {
+      "name": "glass",
+      "args": {
+        "w": 180,
+        "h": 56
+      },
+      "hash": "5ddcffb202deb6ffe5ce2e71097b8d8ed63ba750e045a2966aacba292760cb6a"
+    },
+    {
+      "name": "focus",
+      "args": {
+        "w": 180,
+        "h": 56
+      },
+      "hash": "5ca5c60c2f4136f06fa3f52d52ae8d69c4ac28f3727717e0038a4faab90aacfe"
+    },
+    {
+      "name": "binary",
+      "args": {
+        "w": 180,
+        "h": 56,
+        "frame": 0
+      },
+      "hash": "3b4420670ab657ddd5e9427156fdce444cf6a8c23acf70e0a02034502c620b21"
+    },
+    {
+      "name": "binary",
+      "args": {
+        "w": 180,
+        "h": 56,
+        "frame": 3
+      },
+      "hash": "cb32b02a396b2a4c845f09fcfaf75347a296af0a21200a1d3d832924b2b84cd9"
+    },
+    {
+      "name": "sweep",
+      "args": {
+        "w": 180,
+        "h": 56,
+        "direction": "down"
+      },
+      "hash": "e7b7b03363d8385a427aa36d6029664dc40de74d188d393038b775f53d67d5cd"
+    },
+    {
+      "name": "sweep",
+      "args": {
+        "w": 180,
+        "h": 56,
+        "direction": "right"
+      },
+      "hash": "c4fb34665ef6abb2187eb4d0b4892118893fa822d13d4ad6a06375361a598fab"
+    },
+    {
+      "name": "plate",
+      "args": {
+        "w": 420,
+        "h": 120
+      },
+      "hash": "67dbae798df02ff61695b05aa4b1d9487f1bfd853e34ec079c11504a08f750c1"
+    },
+    {
+      "name": "glass",
+      "args": {
+        "w": 420,
+        "h": 120
+      },
+      "hash": "429e913c8ce675982ce6d8933197062c1c85d9b1b14ada7d199e73cfd113e03f"
+    },
+    {
+      "name": "focus",
+      "args": {
+        "w": 420,
+        "h": 120
+      },
+      "hash": "d96a9663c5570ba63d488fe032e567815e1bf1120208869714699debc52d1939"
+    },
+    {
+      "name": "binary",
+      "args": {
+        "w": 420,
+        "h": 120,
+        "frame": 0
+      },
+      "hash": "ef9f723950ddde41874e207b834074d43ee6ebc310f2f13906422c6297a5d12e"
+    },
+    {
+      "name": "binary",
+      "args": {
+        "w": 420,
+        "h": 120,
+        "frame": 3
+      },
+      "hash": "b7e023d1533d9189f47fbb9b61c5c8f95ec5d033cb9300eaf6619950761a0a13"
+    },
+    {
+      "name": "sweep",
+      "args": {
+        "w": 420,
+        "h": 120,
+        "direction": "down"
+      },
+      "hash": "01125f347946f35fba24039c4c0fcd63bca28913a896537ef6f5070b65b97ef7"
+    },
+    {
+      "name": "sweep",
+      "args": {
+        "w": 420,
+        "h": 120,
+        "direction": "right"
+      },
+      "hash": "7bbf6c7acc7eacee70392da770b588c7a7832ee8015be06ab2384dc0665167ab"
+    },
+    {
+      "name": "triangle",
+      "args": {
+        "elapsed": 0
+      },
+      "hash": "5d95cd7fd22a3d85d332f300c3e9a7f8d73676616021e2b960beac9724161ebd"
+    },
+    {
+      "name": "dust",
+      "args": {
+        "elapsed": 0
+      },
+      "hash": "0ae09123492c4517ccc020e98c3a9f02e60e83fba840f585ec9b0951e7630e0b"
+    },
+    {
+      "name": "triangle",
+      "args": {
+        "elapsed": 0.73
+      },
+      "hash": "cbb2090858c4b7638a28c5807fb5b006b7646a9f8a58a129ced6d1f3c00f6bc3"
+    },
+    {
+      "name": "dust",
+      "args": {
+        "elapsed": 0.73
+      },
+      "hash": "b093461b6e3c296921c95cf0323619fd5c19e53feb3218b75a281aaca80f2914"
+    },
+    {
+      "name": "triangle",
+      "args": {
+        "elapsed": 1.84
+      },
+      "hash": "18762977d342c9796655aa73a48bd03cd3c2ae3e5a1059b94e3161a28721b353"
+    },
+    {
+      "name": "dust",
+      "args": {
+        "elapsed": 1.84
+      },
+      "hash": "08145c1a08b3046ea33736d056881643aafb80f3e1697c47d3cae05bf938e495"
+    },
+    {
+      "name": "fault",
+      "args": {},
+      "hash": "e84ac4548fcc5d9156d50a5338f77f39991f110c6029364317e4a8b8700d7720"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "primary",
+        "selected": false,
+        "enabled": false
+      },
+      "hash": "85040354f8909acb845f59d7ec4b9eaf1358037bf80d4fcfa6cca5e31f59a6e8"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "primary",
+        "selected": false,
+        "enabled": true
+      },
+      "hash": "dc400e35692133aed3fcb0d98949b30ed989944732d0b81c570f124d9846c985"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "primary",
+        "selected": true,
+        "enabled": false
+      },
+      "hash": "85040354f8909acb845f59d7ec4b9eaf1358037bf80d4fcfa6cca5e31f59a6e8"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "primary",
+        "selected": true,
+        "enabled": true
+      },
+      "hash": "dc400e35692133aed3fcb0d98949b30ed989944732d0b81c570f124d9846c985"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "module",
+        "selected": false,
+        "enabled": false
+      },
+      "hash": "be6a6bf0a9d193d3faf56da3e5ede5cb2bb523259fb8b511441297607baf9740"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "module",
+        "selected": false,
+        "enabled": true
+      },
+      "hash": "b5fe34316d61e9119b061d75060f6914d013048f324b08d49a5909e238187100"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "module",
+        "selected": true,
+        "enabled": false
+      },
+      "hash": "b5fe34316d61e9119b061d75060f6914d013048f324b08d49a5909e238187100"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "module",
+        "selected": true,
+        "enabled": true
+      },
+      "hash": "b5fe34316d61e9119b061d75060f6914d013048f324b08d49a5909e238187100"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "switch",
+        "selected": false,
+        "enabled": false
+      },
+      "hash": "be6a6bf0a9d193d3faf56da3e5ede5cb2bb523259fb8b511441297607baf9740"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "switch",
+        "selected": false,
+        "enabled": true
+      },
+      "hash": "be6a6bf0a9d193d3faf56da3e5ede5cb2bb523259fb8b511441297607baf9740"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "switch",
+        "selected": true,
+        "enabled": false
+      },
+      "hash": "be6a6bf0a9d193d3faf56da3e5ede5cb2bb523259fb8b511441297607baf9740"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "switch",
+        "selected": true,
+        "enabled": true
+      },
+      "hash": "be6a6bf0a9d193d3faf56da3e5ede5cb2bb523259fb8b511441297607baf9740"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "danger",
+        "selected": false,
+        "enabled": false
+      },
+      "hash": "2e8e88f9ca7c650b89b19f57d2c7219a96a7a06eb2080333e0f2ce080c557a29"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "danger",
+        "selected": false,
+        "enabled": true
+      },
+      "hash": "2e8e88f9ca7c650b89b19f57d2c7219a96a7a06eb2080333e0f2ce080c557a29"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "danger",
+        "selected": true,
+        "enabled": false
+      },
+      "hash": "2e8e88f9ca7c650b89b19f57d2c7219a96a7a06eb2080333e0f2ce080c557a29"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "danger",
+        "selected": true,
+        "enabled": true
+      },
+      "hash": "2e8e88f9ca7c650b89b19f57d2c7219a96a7a06eb2080333e0f2ce080c557a29"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "icon",
+        "selected": false,
+        "enabled": false
+      },
+      "hash": "24d4f8cb5200b36eed964803f40dcc560aa9d071f94855d7c940766114232f70"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "icon",
+        "selected": false,
+        "enabled": true
+      },
+      "hash": "24d4f8cb5200b36eed964803f40dcc560aa9d071f94855d7c940766114232f70"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "icon",
+        "selected": true,
+        "enabled": false
+      },
+      "hash": "3e57764049af0ca3fc65ab344865bd2967a7a5c299d2f44d5bc9997b493a62cb"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "icon",
+        "selected": true,
+        "enabled": true
+      },
+      "hash": "3e57764049af0ca3fc65ab344865bd2967a7a5c299d2f44d5bc9997b493a62cb"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "nav",
+        "selected": false,
+        "enabled": false
+      },
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "nav",
+        "selected": false,
+        "enabled": true
+      },
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "nav",
+        "selected": true,
+        "enabled": false
+      },
+      "hash": "841efc9a0b0a6319c93a20d33598c32fb1e59dbb9301e6db8a7c74cef7ce7192"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "nav",
+        "selected": true,
+        "enabled": true
+      },
+      "hash": "841efc9a0b0a6319c93a20d33598c32fb1e59dbb9301e6db8a7c74cef7ce7192"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "segment",
+        "selected": false,
+        "enabled": false
+      },
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "segment",
+        "selected": false,
+        "enabled": true
+      },
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "segment",
+        "selected": true,
+        "enabled": false
+      },
+      "hash": "96496c03f0eddf7f5d554d8da3332530932e3cb289de830deca7f341688a0947"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "segment",
+        "selected": true,
+        "enabled": true
+      },
+      "hash": "96496c03f0eddf7f5d554d8da3332530932e3cb289de830deca7f341688a0947"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "utility",
+        "selected": false,
+        "enabled": false
+      },
+      "hash": "4f6585cfb97cbe6e344b763dc5a27ee4375905576989f11b6353bf3d45c2b594"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "utility",
+        "selected": false,
+        "enabled": true
+      },
+      "hash": "4f6585cfb97cbe6e344b763dc5a27ee4375905576989f11b6353bf3d45c2b594"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "utility",
+        "selected": true,
+        "enabled": false
+      },
+      "hash": "4f6585cfb97cbe6e344b763dc5a27ee4375905576989f11b6353bf3d45c2b594"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "utility",
+        "selected": true,
+        "enabled": true
+      },
+      "hash": "4f6585cfb97cbe6e344b763dc5a27ee4375905576989f11b6353bf3d45c2b594"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "line",
+        "selected": false,
+        "enabled": false
+      },
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "line",
+        "selected": false,
+        "enabled": true
+      },
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "line",
+        "selected": true,
+        "enabled": false
+      },
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "button",
+      "args": {
+        "variant": "line",
+        "selected": true,
+        "enabled": true
+      },
+      "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "name": "signal",
+      "args": {
+        "w": 360,
+        "h": 640,
+        "progress": 0
+      },
+      "hash": "bb02bf7d2392ac28cfe52a76959dc965f3069193ef3f07e9bd89d5ad432ac0a5"
+    },
+    {
+      "name": "signal",
+      "args": {
+        "w": 360,
+        "h": 640,
+        "progress": 0.25
+      },
+      "hash": "166c3565476befbb4b1f7bd175e042684608dec965199332196c9f80aff20da8"
+    },
+    {
+      "name": "signal",
+      "args": {
+        "w": 360,
+        "h": 640,
+        "progress": 0.46
+      },
+      "hash": "9321bdb2401e3d1fe74afd00d10874e37071d9cf20eaf4c58ef1c689df70a73b"
+    },
+    {
+      "name": "signal",
+      "args": {
+        "w": 360,
+        "h": 640,
+        "progress": 0.7
+      },
+      "hash": "b443d44c813fd1a966dc70d73aa2ef5487aff62ded20ee2890897b6159e0ee91"
+    },
+    {
+      "name": "signal",
+      "args": {
+        "w": 360,
+        "h": 640,
+        "progress": 0.95
+      },
+      "hash": "70f521f9dfaf031cf5572bb9f4b3970de885a5cc057f21a91e4f55ed36841033"
+    },
+    {
+      "name": "signal",
+      "args": {
+        "w": 1280,
+        "h": 720,
+        "progress": 0
+      },
+      "hash": "f798b11f3de5164f9921812c9d01b0f0d6551650c311f355b2f16b6c5fd46a93"
+    },
+    {
+      "name": "signal",
+      "args": {
+        "w": 1280,
+        "h": 720,
+        "progress": 0.25
+      },
+      "hash": "04564935d7c07a84eaa624fea0999c3cb348d28afbac1671ee60e94d84ec9806"
+    },
+    {
+      "name": "signal",
+      "args": {
+        "w": 1280,
+        "h": 720,
+        "progress": 0.46
+      },
+      "hash": "bfb831f26dcd793afeed6e6280b917fa2931337c0a119c107acc0c61f3191fac"
+    },
+    {
+      "name": "signal",
+      "args": {
+        "w": 1280,
+        "h": 720,
+        "progress": 0.7
+      },
+      "hash": "54296822a3e8da4406782378d8567ad313822205bd63df662f47a9feb7195fb1"
+    },
+    {
+      "name": "signal",
+      "args": {
+        "w": 1280,
+        "h": 720,
+        "progress": 0.95
+      },
+      "hash": "70fa7e253ec41907adefb5dc89a536ecf229c4635d8ce892c863a515b5bab3cb"
+    },
+    {
+      "name": "brackets",
+      "args": {
+        "elapsed": 0,
+        "reduced": false
+      },
+      "hash": "b4854d5de4c7b86d6a231c284d083d0a829ebc5c33f94b45f355d570c4bcb2bd"
+    },
+    {
+      "name": "brackets",
+      "args": {
+        "elapsed": 0,
+        "reduced": true
+      },
+      "hash": "b4854d5de4c7b86d6a231c284d083d0a829ebc5c33f94b45f355d570c4bcb2bd"
+    },
+    {
+      "name": "brackets",
+      "args": {
+        "elapsed": 0.4,
+        "reduced": false
+      },
+      "hash": "7c87e34bcc532d76079a5746489531281e6d6e2bf6b9cb315dfebdda466aabd8"
+    },
+    {
+      "name": "brackets",
+      "args": {
+        "elapsed": 0.4,
+        "reduced": true
+      },
+      "hash": "b4854d5de4c7b86d6a231c284d083d0a829ebc5c33f94b45f355d570c4bcb2bd"
+    },
+    {
+      "name": "brackets",
+      "args": {
+        "elapsed": 1.2,
+        "reduced": false
+      },
+      "hash": "b4854d5de4c7b86d6a231c284d083d0a829ebc5c33f94b45f355d570c4bcb2bd"
+    },
+    {
+      "name": "brackets",
+      "args": {
+        "elapsed": 1.2,
+        "reduced": true
+      },
+      "hash": "b4854d5de4c7b86d6a231c284d083d0a829ebc5c33f94b45f355d570c4bcb2bd"
+    }
+  ],
+  "brackets": {
+    "cycleMs": 2400,
+    "travel": 18,
+    "scale": 0.18,
+    "jitter": 0.8,
+    "distanceRatio": 0.35,
+    "maxDistance": 240,
+    "halfHeight": 36,
+    "bevel": 10,
+    "strokeWidth": 1,
+    "alpha": 0.22,
+    "peakAlpha": 0.4,
+    "markerSize": 4,
+    "markerAlpha": 0.65
+  },
+  "bracketFrameMs": 33
+}
