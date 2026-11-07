@@ -16,7 +16,7 @@
     "pack": "npm run build && node scripts/pack.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run typecheck && npm run lint && npm run format:check && npm test && npm run build:demo"
+    "check": "npm run build && npm run typecheck && npm run lint && npm run format:check && npm test && npm run build:demo"
   },
   "devDependencies": {
     "@eslint/js": "9.39.5",
