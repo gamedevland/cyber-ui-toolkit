@@ -12,7 +12,7 @@ textures, or game services are created by core.
 | Package                     | Purpose                                        | Peers                                             |
 | --------------------------- | ---------------------------------------------- | ------------------------------------------------- |
 | `@gamedevland/cyber-ui`     | Surfaces, icons, geometry, effects             | PixiJS `>=8.16.0 <9`                              |
-| `@gamedevland/cyber-ui-sdk` | Optional component lifecycle and reveal action | Core `^0.1.0`, GameDevLand SDK `0.0.11`, PixiJS 8 |
+| `@gamedevland/cyber-ui-sdk` | Optional component lifecycle and reveal action | Core `^0.2.0`, GameDevLand SDK `0.0.11`, PixiJS 8 |
 
 ES modules with TypeScript declarations. MIT licensed. Development and Node usage require
 Node.js 22.12 or later. Browser applications use a bundler such as Vite.
@@ -109,19 +109,20 @@ two dedicated Graphics itself.
 
 `ButtonSurface.draw(graphics, options, palette)` paints at `(0, 0)`.
 `options` contains `width`, `height`, `variant`, `enabled`, `selected`, and optional
-`explicitAccent` for the module accent rail.
+`explicitAccent` for the module accent rail and `ready` for an available reward highlight.
 
-| Variant   | Drawing                                                   |
-| --------- | --------------------------------------------------------- |
-| `primary` | Solid accent when enabled; glass otherwise                |
-| `module`  | Glass surface with optional accent rail                   |
-| `danger`  | Glass with danger accent                                  |
-| `icon`    | Rounded inset surface, highlighted when selected          |
-| `nav`     | Selection background and top marker when selected         |
-| `segment` | Filled rounded selection when selected                    |
-| `switch`  | Glass surface; add the knob with `ButtonSurface.toggle()` |
-| `utility` | Bottom rule                                               |
-| `line`    | No background; use with a host-owned label/icon           |
+| Variant   | Drawing                                                    |
+| --------- | ---------------------------------------------------------- |
+| `primary` | Solid accent when enabled; glass otherwise                 |
+| `module`  | Glass surface with optional accent rail                    |
+| `danger`  | Glass with danger accent                                   |
+| `icon`    | Rounded inset surface, highlighted when selected           |
+| `nav`     | Transparent inactive item; subtle active tint and top rail |
+| `segment` | Active fill inside a shared `segmentTrack`                 |
+| `tab`     | Rounded standalone selector with active underline          |
+| `switch`  | Glass surface; add the knob with `ButtonSurface.toggle()`  |
+| `utility` | Bottom rule                                                |
+| `line`    | No background; use with a host-owned label/icon            |
 
 ```ts
 ButtonSurface.toggle(button, 220, 56, true, theme);
@@ -292,3 +293,63 @@ Releases use matching package versions. Run the **Publish npm packages** GitHub 
 workflow on the reviewed release commit after checks pass. Configure npm trusted publishing
 for that workflow, or provide its `NPM_TOKEN` secret. Core publishes before the SDK adapter;
 CI publication includes provenance. Publishing requires access to the `@gamedevland` scope.
+
+## Surface hierarchy
+
+Use `PanelSurface.draw(graphics, bounds, { surface, edge, accent })` for noninteractive
+information. It uses a quiet rectangular border and a side rail. Keep `TerminalGlass`
+for decorated glass compositions and bevelled action buttons.
+
+`ButtonSurface` variants `primary`, `module`, and `danger` represent actions.
+`nav` uses a light active tint and a top rail inside a shared glass panel; inactive
+items remain transparent. `segmentTrack` draws one shared background and outer border for `segment`
+items, whose selected state is a simple fill without individual borders. `tab` uses
+a rounded selector with an underline and works well for square portrait selectors.
+Set `ready: true` and supply the reward accent to highlight an available claim.
+The host still owns text, portraits, badges, input, and enabled-state rules.
+
+## Information panels and price rows
+
+```ts
+import { ButtonPrice, PanelSurface } from '@gamedevland/cyber-ui';
+
+PanelSurface.draw(
+  panel.clear(),
+  { x: 0, y: 0, w: 320, h: 160 },
+  {
+    surface: theme.panel,
+    edge: theme.panelEdge,
+    accent: theme.accent,
+  },
+);
+
+// Host-created, measured Text objects; call again after localization or resize.
+const amount = button.addChild(new Text({ text: '250' }));
+const row = ButtonPrice.layout(220, label.width, amount.width, 18, 8, 12);
+label.anchor.set(0.5);
+amount.anchor.set(0.5);
+label.scale.set(row.scale);
+amount.scale.set(row.scale);
+label.position.set(row.labelX, 28);
+amount.position.set(row.amountX, 28);
+TerminalUi.icon(button, 'credit', row.iconX, 28, row.iconSize, theme.text);
+```
+
+Measure unscaled text before calling `layout()` again: reset the label and amount scale to
+`1` first. The result contains `scale`, `labelX`, `iconX`, `amountX`, and the scaled `iconSize`.
+It fits one row between the supplied horizontal padding without changing host objects.
+
+Draw navigation items inside one shared `TerminalGlass` background. Draw
+`ButtonSurface.segmentTrack(g, { x, y, w, h }, palette)` once around a segment group,
+then draw each `segment` into a separate local Graphics. Inactive segments have no geometry;
+only the active item has a fill. Use `tab` for separate portrait selectors.
+
+## Documentation and release notes
+
+- [Practical lessons and interactive examples](https://gamedev.land/academy/cyber-ui/)
+- [Changelog](CHANGELOG.md)
+- [Core package guide](packages/core/README.md)
+- [SDK adapter guide](packages/sdk/README.md)
+
+The 0.2 release changes the navigation and segment skins. Applications that previously used
+standalone segments should add the shared track; portrait selectors should use `tab`.

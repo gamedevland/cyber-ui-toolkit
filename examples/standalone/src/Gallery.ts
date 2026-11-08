@@ -2,6 +2,7 @@ import {
   BinaryField,
   ButtonSurface,
   CyberPreset,
+  PanelSurface,
   SignalLost,
   SurfaceGlitch,
   TerminalGlass,
@@ -45,6 +46,7 @@ export class Gallery {
     'icon',
     'nav',
     'segment',
+    'tab',
     'switch',
     'utility',
     'line',
@@ -169,6 +171,15 @@ export class Gallery {
       this.accent,
       CyberPreset.palette.text,
     );
+    PanelSurface.draw(
+      this.panel,
+      { x: 24, y: 258, w: this.width - 48, h: 56 },
+      {
+        surface: CyberPreset.palette.panel,
+        edge: CyberPreset.palette.panelEdge,
+        accent: this.accent,
+      },
+    );
     const targets: GlitchTarget[] = [];
     const palette = { ...CyberPreset.palette, accent: this.accent };
     for (const [index, control] of this.controls.entries()) {
@@ -178,6 +189,21 @@ export class Gallery {
       control.surface.position.set(x, y);
       control.surface.hitArea = new Rectangle(0, 0, w, 56);
       control.surface.clear();
+      if (control.variant === 'nav')
+        TerminalGlass.draw(
+          control.surface,
+          0,
+          0,
+          w,
+          56,
+          7,
+          palette.panel,
+          palette.panelEdge,
+          palette.accent,
+          palette.text,
+        );
+      if (control.variant === 'segment')
+        ButtonSurface.segmentTrack(control.surface, { x: 0, y: 0, w, h: 56 }, palette);
       ButtonSurface.draw(
         control.surface,
         { width: w, height: 56, variant: control.variant, selected, enabled: true },

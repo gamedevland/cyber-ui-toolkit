@@ -2,10 +2,20 @@ import { TerminalGlass } from './TerminalGlass.js';
 import { TerminalUi } from './TerminalUi.js';
 import { UiContracts } from './UiContracts.js';
 
+import type { UiBounds } from './types.js';
 import type { Graphics } from 'pixi.js';
 
 export type ButtonVariant =
-  'primary' | 'module' | 'switch' | 'danger' | 'icon' | 'nav' | 'segment' | 'utility' | 'line';
+  | 'primary'
+  | 'module'
+  | 'switch'
+  | 'danger'
+  | 'icon'
+  | 'nav'
+  | 'segment'
+  | 'tab'
+  | 'utility'
+  | 'line';
 export type ButtonPalette = {
   readonly background: number;
   readonly focus: number;
@@ -27,6 +37,7 @@ export type ButtonSurfaceOptions = {
   readonly selected: boolean;
   readonly enabled: boolean;
   readonly explicitAccent?: boolean;
+  readonly ready?: boolean;
 };
 
 /** Skin only: the host owns hit testing, focus, labels, and application actions. */
@@ -67,13 +78,38 @@ export class ButtonSurface {
     } else if (variant === 'nav' && selected) {
       g.roundRect(3, 5, w - 6, h - 10, 8).fill({ color: t.signal, alpha: 0.14 });
       g.roundRect(w * 0.32, 0, w * 0.36, 3, 1).fill(t.signal);
-    } else if (variant === 'segment' && selected) {
-      g.roundRect(0, 0, w, h, 17).fill(t.sapphire).stroke({ color: t.focus, width: 1 });
+    } else if (variant === 'segment') {
+      if (selected) g.roundRect(0, 0, w, h, h / 2).fill(t.sapphire);
+    } else if (variant === 'tab') {
+      const inset = 0;
+      const radius = 8;
+      g.roundRect(inset, inset, w - inset * 2, h - inset * 2, radius)
+        .fill({ color: selected ? t.sapphire : t.inset, alpha: selected ? 1 : 0.5 })
+        .stroke({
+          color: selected ? t.accent : t.panelEdge,
+          width: selected ? 1.5 : 1,
+          alpha: selected ? 1 : 0.5,
+        });
+      if (selected) g.roundRect(w * 0.22, h - 4, w * 0.56, 3, 1.5).fill(t.accent);
     } else if (variant === 'utility') {
       g.moveTo(7, h - 1)
         .lineTo(w - 7, h - 1)
         .stroke({ color: t.panelEdge, width: 1 });
     }
+    if (options.ready) {
+      g.roundRect(1, 1, w - 2, h - 2, 7)
+        .fill({ color: t.accent, alpha: 0.18 })
+        .stroke({ color: t.accent, width: 2 });
+      g.rect(1, 8, 4, Math.max(1, h - 16)).fill(t.accent);
+    }
+  }
+
+  static segmentTrack(g: Graphics, bounds: UiBounds, t: ButtonPalette): void {
+    UiContracts.bounds(bounds);
+    const { x, y, w, h } = bounds;
+    g.roundRect(x, y, w, h, h / 2)
+      .fill(t.inset)
+      .stroke({ color: t.panelEdge, width: 1 });
   }
 
   static toggle(

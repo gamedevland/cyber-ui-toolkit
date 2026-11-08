@@ -123,4 +123,6 @@ does not wait for their completion.
 [Full guide](https://github.com/gamedevland/cyber-ui-toolkit#readme)
 · [Typechecked component](https://github.com/gamedevland/cyber-ui-toolkit/blob/main/examples/sdk/src/CyberPanel.ts)
 
-MIT License. Core `^0.1.0`, SDK `0.0.11`, PixiJS `>=8.16.0 <9`.
+MIT License. Core `^0.2.0`, SDK `0.0.11`, PixiJS `>=8.16.0 <9`.
+
+[Release notes](CHANGELOG.md) · [Interactive lessons](https://gamedev.land/academy/cyber-ui/)

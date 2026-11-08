@@ -1,9 +1,12 @@
 export { AnimatedEffect } from './AnimatedEffect.js';
 export { BinaryField } from './BinaryField.js';
 export { ButtonSurface } from './ButtonSurface.js';
+export { ButtonPrice } from './ButtonPrice.js';
 export type { ButtonPalette, ButtonSurfaceOptions, ButtonVariant } from './ButtonSurface.js';
 export { CyberPreset } from './CyberPreset.js';
 export { FaultGlyph } from './FaultGlyph.js';
+export { PanelSurface } from './PanelSurface.js';
+export type { PanelPalette } from './PanelSurface.js';
 export { PanelTransition } from './PanelTransition.js';
 export type { PanelTransitionInput } from './PanelTransition.js';
 export { SignalBrackets } from './SignalBrackets.js';
