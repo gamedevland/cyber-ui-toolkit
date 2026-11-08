@@ -6,6 +6,7 @@ import {
   BinaryField,
   ButtonSurface,
   FaultGlyph,
+  PanelSurface,
   SignalBrackets,
   SignalLost,
   TerminalGlass,
@@ -96,4 +97,70 @@ test(`drawing regression: ${baseline.results.length} captured cases`, () => {
       );
     assert.equal(DrawingSnapshot.hash(g), fixture.hash, `${name} ${JSON.stringify(args)}`);
   }
+});
+
+test('information, actions and selectors have distinct silhouettes and ready claims carry a visible accent', () => {
+  const t = baseline.theme;
+  const palette = { ...t, accent: t.sky, focus: t.sky, danger: t.bug };
+  const panel = new Graphics(),
+    action = new Graphics(),
+    tab = new Graphics(),
+    selected = new Graphics(),
+    ready = new Graphics();
+  PanelSurface.draw(
+    panel,
+    { x: 0, y: 0, w: 240, h: 56 },
+    { surface: t.panel, edge: t.panelEdge, accent: t.sky },
+  );
+  ButtonSurface.draw(
+    action,
+    { width: 240, height: 56, variant: 'primary', selected: false, enabled: true },
+    palette,
+  );
+  ButtonSurface.draw(
+    tab,
+    { width: 240, height: 56, variant: 'tab', selected: false, enabled: true },
+    palette,
+  );
+  ButtonSurface.draw(
+    selected,
+    { width: 240, height: 56, variant: 'tab', selected: true, enabled: true },
+    palette,
+  );
+  ButtonSurface.draw(
+    ready,
+    { width: 240, height: 56, variant: 'module', selected: false, enabled: true, ready: true },
+    palette,
+  );
+  assert.equal(new Set([panel, action, tab].map((g) => DrawingSnapshot.hash(g))).size, 3);
+  assert.notEqual(DrawingSnapshot.hash(tab), DrawingSnapshot.hash(selected));
+  assert.ok(
+    ready.context.instructions.some(
+      (i) => i.action === 'stroke' && i.data.style.width === 2 && i.data.style.color === t.sky,
+    ),
+  );
+  assert.throws(() => PanelSurface.draw(panel, { x: 0, y: 0, w: -1, h: 56 }, palette));
+});
+
+test('grouped selectors have one shared outline and no individual outlines or inactive surfaces', () => {
+  const t = baseline.theme;
+  const palette = { ...t, accent: t.sky, focus: t.sky, danger: t.bug };
+  const track = new Graphics(),
+    inactive = new Graphics(),
+    active = new Graphics();
+  ButtonSurface.segmentTrack(track, { x: 0, y: 0, w: 480, h: 39 }, palette);
+  ButtonSurface.draw(
+    inactive,
+    { width: 238, height: 35, variant: 'segment', selected: false, enabled: true },
+    palette,
+  );
+  ButtonSurface.draw(
+    active,
+    { width: 238, height: 35, variant: 'segment', selected: true, enabled: true },
+    palette,
+  );
+  assert.equal(inactive.context.instructions.length, 0);
+  assert.equal(track.context.instructions.filter((i) => i.action === 'stroke').length, 1);
+  assert.ok(active.context.instructions.some((i) => i.action === 'fill'));
+  assert.ok(active.context.instructions.every((i) => i.action !== 'stroke'));
 });

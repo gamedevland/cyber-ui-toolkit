@@ -32,8 +32,11 @@ TerminalUi.icon(surface, 'gear', 28, 28, 24, theme.accent);
 ## API
 
 - `TerminalUi`: beveled plates, traces, etching, clipped paths, 27 vector icons.
-- `TerminalGlass`: layered surfaces and focus accents.
-- `ButtonSurface`: primary/module/danger/icon/nav/segment/switch/utility/line skins.
+- `ButtonPrice`: fitted localized action/currency/amount row.
+- `PanelSurface`: rectangular information panels with an accent rail.
+- `TerminalGlass`: decorated glass surfaces and focus accents.
+- `ButtonSurface`: primary/module/danger action skins, light navigation items, borderless grouped segments and standalone tab selectors,
+  icon/switch/utility/line skins, and an optional `ready` claim highlight.
 - `TriangleLoader`, `TextEcho`, `SurfaceGlitch`: seeded or host-timed effects.
 - `BinaryField`, `SignalBrackets`, `TerminalSweep`, `FaultGlyph`, `SignalLost`: drawing helpers.
 - `PanelTransition`: transition geometry.
@@ -56,3 +59,10 @@ Core does not create renderers, tickers, DOM listeners, asset loaders, or audio 
 · [Source and issues](https://github.com/gamedevland/cyber-ui-toolkit)
 
 MIT License. PixiJS `>=8.16.0 <9`. Node.js 22.12+ for Node usage.
+
+`ButtonPrice.layout(width, labelWidth, amountWidth, iconSize, gap, padding)`
+centers a measured localized action label, a currency icon, and an amount as one
+row, scaling the complete group to fit the available button width. The host owns
+text nodes and draws the currency icon with `TerminalUi.icon`.
+
+[Release notes](CHANGELOG.md) · [Interactive lessons](https://gamedev.land/academy/cyber-ui/)

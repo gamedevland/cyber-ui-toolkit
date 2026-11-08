@@ -55,7 +55,11 @@ for (const name of ['cyber-ui', 'cyber-ui-sdk']) {
     assert.ok(paths.includes('README.md'));
     assert.ok(paths.includes('dist/index.js'));
     assert.ok(paths.includes('dist/index.d.ts'));
-    assert.ok(paths.every((path) => /^(dist\/|README\.md$|LICENSE$|package\.json$)/.test(path)));
+    assert.ok(
+      paths.every((path) =>
+        /^(dist\/|README\.md$|LICENSE$|CHANGELOG\.md$|package\.json$)/.test(path),
+      ),
+    );
     assert.ok(!paths.some((path) => /AGENTS|PLAN|experiment|node_modules|\.tgz/.test(path)));
     const manifest = JSON.parse(
       readFileSync(
@@ -63,7 +67,11 @@ for (const name of ['cyber-ui', 'cyber-ui-sdk']) {
         'utf8',
       ),
     );
-    assert.equal(manifest.version, '0.1.0');
+    const release = JSON.parse(readFileSync(resolve(workspace, 'package.json'), 'utf8'));
+    assert.equal(manifest.version, release.version);
+    assert.ok(paths.includes('CHANGELOG.md'));
+    if (name === 'cyber-ui-sdk')
+      assert.equal(manifest.peerDependencies['@gamedevland/cyber-ui'], `^${release.version}`);
     assert.equal(manifest.publishConfig.access, 'public');
     assert.equal(
       manifest.repository.url,
