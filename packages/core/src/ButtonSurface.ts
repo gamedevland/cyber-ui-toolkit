@@ -112,6 +112,27 @@ export class ButtonSurface {
       .stroke({ color: t.panelEdge, width: 1 });
   }
 
+  /** One host-selected next action; reduced motion keeps a strong static cue. */
+  static attention(
+    g: Graphics,
+    bounds: UiBounds,
+    phase: number,
+    reduced: boolean,
+    t: ButtonPalette,
+  ): void {
+    UiContracts.bounds(bounds);
+    UiContracts.number('phase', phase, 0);
+    const { x, y, w, h } = bounds;
+    const pulse = reduced ? 1 : (1 + Math.sin(phase * Math.PI * 2)) / 2;
+    const inset = Math.min(3, w / 8, h / 8);
+    const radius = Math.min(8, w / 4, h / 4);
+    g.roundRect(x + inset, y + inset, w - inset * 2, h - inset * 2, radius)
+      .fill({ color: t.signal, alpha: 0.12 + pulse * 0.28 })
+      .stroke({ color: t.signal, width: 6, alpha: 0.14 + pulse * 0.24 })
+      .stroke({ color: t.signal, width: 3, alpha: 0.8 + pulse * 0.2 });
+    g.roundRect(x + w * 0.22, y + inset, w * 0.56, 3, 1.5).fill(t.signal);
+  }
+
   static toggle(
     g: Graphics,
     width: number,
